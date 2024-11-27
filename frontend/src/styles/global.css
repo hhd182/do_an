@@ -1,0 +1,218 @@
+:focus {
+  outline: 2px solid #1890ff;
+  outline-offset: 2px;
+}
+
+.ant-btn:focus,
+.ant-input:focus {
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+/* Loại bỏ border cho tất cả các component Ant Design */
+.ant-layout,
+.ant-layout-header,
+.ant-layout-content,
+.ant-layout-footer,
+.ant-menu {
+  border: none !important;
+}
+
+/* Đảm bảo rằng content lấp đầy toàn bộ không gian có sẵn */
+#root {
+  height: 100vh;
+}
+
+body, .ant-typography {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+.ant-table {
+  font-size: 14px;
+}
+
+.ant-btn {
+  font-size: 14px;
+  height: 32px;
+  padding: 4px 15px;
+}
+
+.ant-input {
+  font-size: 14px;
+  height: 32px;
+}
+
+.ant-layout {
+  min-height: 100vh;
+}
+
+.ant-layout-sider {
+  box-shadow: 2px 0 6px rgba(0,21,41,.35);
+}
+
+.ant-layout-header {
+  padding: 0 24px !important;
+}
+
+.ant-layout-content {
+  background: #f0f2f5;
+}
+
+.virtual-table .ant-table-container:before,
+.virtual-table .ant-table-container:after {
+  display: none;
+}
+.virtual-table-cell {
+  box-sizing: border-box;
+  padding: 16px;
+  border-bottom: 1px solid #e8e8e8;
+  background: #fff;
+}
+.virtual-table-cell-last {
+  border-right: 1px solid #e8e8e8;
+}
+.virtual-table-cell-hover {
+  background: #e6f7ff;
+}
+
+/* Thêm vào cuối file */
+
+/* Đảm bảo scrollbar luôn hiển thị trên Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+}
+
+/* Tùy chỉnh scrollbar cho Chrome, Edge, và Safari */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Đảm bảo các input và button có cùng font với phần còn lại của ứng dụng */
+input, button, select, textarea {
+  font-family: inherit;
+}
+
+/* Dark mode styles */
+.dark .ant-table {
+  background-color: #1f2937;
+  color: #e5e7eb;
+}
+
+.dark .ant-table-thead > tr > th {
+  background-color: #374151;
+  color: #e5e7eb;
+}
+
+.dark .ant-table-tbody > tr > td {
+  border-bottom: 1px solid #4b5563;
+}
+
+.dark .ant-input {
+  background-color: #374151;
+  color: #e5e7eb;
+}
+
+.dark .ant-input-search-button {
+  background-color: #4b5563;
+  border-color: #4b5563;
+}
+
+.dark .ant-modal-content,
+.dark .ant-modal-header {
+  background-color: #1f2937;
+  color: #e5e7eb;
+}
+
+.dark .ant-modal-title {
+  color: #e5e7eb;
+}
+
+.dark .ant-form-item-label > label {
+  color: #e5e7eb;
+}
+
+/* Dark mode styles for Ant Design components */
+.ant-table-dark {
+  background-color: #1f2937;
+  color: #f3f4f6;
+}
+
+.ant-table-dark .ant-table-thead > tr > th {
+  background-color: #374151;
+  color: #f3f4f6;
+}
+
+.ant-table-dark .ant-table-tbody > tr > td {
+  border-bottom: 1px solid #4b5563;
+}
+
+.ant-table-dark .ant-table-tbody > tr:hover > td {
+  background-color: #374151;
+}
+
+/* Add more dark mode styles for other Ant Design components as needed */
+
+/* Thêm vào cuối file */
+.settings-select-dark .ant-select-selector {
+  background-color: #374151 !important;
+  border-color: #4B5563 !important;
+  color: #E5E7EB !important;
+}
+
+.settings-select-dark .ant-select-arrow {
+  color: #E5E7EB !important;
+}
+
+/* Thêm vào cuối file */
+.ant-menu {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 64px); /* Điều chỉnh chiều cao nếu cần */
+}
+
+.ant-menu-item:last-child {
+  margin-top: auto;
+}
+
+/* Thêm vào cuối file */
+.dark-select .ant-select-selector {
+  background-color: #374151 !important;
+  border-color: #4B5563 !important;
+  color: #E5E7EB !important;
+}
+
+.dark-select .ant-select-arrow {
+  color: #E5E7EB !important;
+}
+
+.dark-select .ant-select-dropdown {
+  background-color: #374151 !important;
+  border-color: #4B5563 !important;
+}
+
+.dark-select .ant-select-item {
+  color: #E5E7EB !important;
+}
+
+.dark-select .ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+  background-color: #4B5563 !important;
+}
+
+.dark-select .ant-select-item-option-active:not(.ant-select-item-option-disabled) {
+  background-color: #6B7280 !important;
+}
